@@ -1,4 +1,10 @@
 PATH
+  remote: ../tramway-user
+  specs:
+    tramway-user (0.1.0)
+      rails (~> 5.1.4)
+
+PATH
   remote: .
   specs:
     tramway-sport_school (0.1.0)
@@ -114,6 +120,7 @@ PLATFORMS
 DEPENDENCIES
   pg
   tramway-sport_school!
+  tramway-user!
 
 BUNDLED WITH
    1.16.0
