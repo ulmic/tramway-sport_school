@@ -1,4 +1,4 @@
 module Tramway::SportSchool
-  class KindSport < ApplicationRecord
+  class KindSport < ::Tramway::Core::ApplicationRecord
   end
 end
