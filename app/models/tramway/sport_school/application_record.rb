@@ -1,7 +1,6 @@
 module Tramway
   module SportSchool
-    class ApplicationRecord < ActiveRecord::Base
-      self.abstract_class = true
+    class ApplicationRecord < ::Tramway::Core::ApplicationRecord
     end
   end
 end
