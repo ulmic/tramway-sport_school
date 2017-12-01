@@ -19,8 +19,7 @@
       %footer.mastfoot
         .inner
           %p
-            Cover template for
             = succeed ',' do
-              %a{ href: 'https://getbootstrap.com/' } Bootstrap
+              = link_to fa_icon(:vkontakte), 'https://vk.com/'
             = succeed '.' do
-              %a{ href: 'https://twitter.com/mdo' } @mdo
+              = link_to fa_icon(:twitter), 'https://twitter.com/'
