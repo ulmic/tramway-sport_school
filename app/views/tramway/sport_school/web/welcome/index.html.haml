@@ -3,16 +3,19 @@
     .cover-container
       %header.masthead.clearfix
         .inner
-          %h3.masthead-brand Cover
+          %h3.masthead-brand Спортивная школа
           %nav.nav.nav-masthead
-            %a.nav-link.active{ href: '#' } Home
-            %a.nav-link{ href: '#' } Features
-            %a.nav-link{ href: '#' } Contact
+            %a.nav-link.active{ href: '#' } Для родителей
+            %a.nav-link{ href: '#' } Для школьников
+            %a.nav-link{ href: '#' } Для взрослых
+            %a.nav-link{ href: '#' } Контакты
       %main.inner.cover{ role: 'main' }
-        %h1.cover-heading Cover your page.
-        %p.lead Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+        %h1.cover-heading Спортивная школа Ленинского района
+        %p.lead Главный слоган спортивной школы Ленинского района
         %p.lead
-          %a.btn.btn-lg.btn-secondary{ href: '#' } Learn more
+          = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary'
+          = link_to 'Я - школьник', '#scholer', class: 'btn btn-lg btn-secondary'
+          = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary'
       %footer.mastfoot
         .inner
           %p
