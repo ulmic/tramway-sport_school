@@ -8,8 +8,6 @@ $.extend($.scrollTo.defaults, {
     duration: 2000
 })
 $(document).ready ->
-  alert $('.scroll').length
   $('.scroll').click (e) ->
-    alert 5
     e.preventDefault()
     $.scrollTo "##{$(@).data('id')}"

@@ -6,16 +6,16 @@
           %h3.masthead-brand Спортивная школа
           %nav.nav.nav-masthead
             = link_to 'Для родителей', '#parents', class: 'nav-link scroll', data: { id: :parents  }
-            = link_to 'Для школьников', '#schoolkids', class: 'nav-link'
-            = link_to 'Для взрослых', '#adults', class: 'nav-link'
-            = link_to 'Контакты', '#contacts', class: 'nav-link'
-      %main.inner.cover{ role: 'main' }
+            = link_to 'Для школьников', '#schoolkids', class: 'nav-link', data: { id: :schoolkids }
+            = link_to 'Для взрослых', '#adults', class: 'nav-link', data: { id: :adults }
+            = link_to 'Контакты', '#contacts', class: 'nav-link', data: { id: :contacts }
+      %main.inner.cover{ role: :main }
         %h1.cover-heading Спортивная школа Ленинского района
         %p.lead Главный слоган спортивной школы Ленинского района
         %p.lead
-          = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary'
-          = link_to 'Я - школьник', '#schoolkids', class: 'btn btn-lg btn-secondary'
-          = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary'
+          = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary', data: { id: :parents }
+          = link_to 'Я - школьник', '#schoolkids', class: 'btn btn-lg btn-secondary', data: { id: :schoolkids }
+          = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary', data: { id: :adult }
       %footer.mastfoot
         .inner
           %p
