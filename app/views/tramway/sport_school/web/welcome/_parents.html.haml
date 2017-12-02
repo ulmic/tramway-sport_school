@@ -1,0 +1,15 @@
+.site-wrapper#parents
+  .site-wrapper-inner
+    .cover-container
+      %main.inner.cover{ role: 'main' }
+        %h1.cover-heading Спортивная школа Ленинского района
+        %p.lead Главный слоган спортивной школы Ленинского района
+        %p.lead
+          = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary'
+          = link_to 'Я - школьник', '#scholer', class: 'btn btn-lg btn-secondary'
+          = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary'
+      %footer.mastfoot
+        .inner
+          %p
+            = link_to fa_icon('vk 4x'), 'https://vk.com/'
+            = link_to fa_icon('twitter 4x'), 'https://twitter.com/'
