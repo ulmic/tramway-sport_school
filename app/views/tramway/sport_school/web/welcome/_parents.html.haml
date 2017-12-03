@@ -1,14 +1,32 @@
 = render 'tramway/sport_school/web/welcome/shared/block', id: :parents do
   %h1.cover-heading Мы находимся в центре города
   %p.lead Вы живете в Ленинском районе города Ульяновска? Или может быть ваш ребенок учится в одной из центральных школ города? Вы стали замечать, что у него есть способности к спорту? Тогда вам сюда!
+
+
 = render 'tramway/sport_school/web/welcome/shared/block', id: :trainers do
   .row
     .col
       %h1.cover-heading
-        Опыт коллектив тренеров
+        Опытный коллектив тренеров
   %hr
   .row
     = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
     = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
     = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
     = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
+
+
+= render 'tramway/sport_school/web/welcome/shared/block', id: :kind_sports do
+  .row
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/1.jpg', title: 'Шахматы'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: '', title: 'Горнолыжный спорт'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: '', title: 'Дзюдо'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: '', title: 'Гиревой спорт'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: '', title: 'Спортивное ориентирование'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/6.jpg', title: 'Бокс'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/7.jpg', title: 'Лыжные гонки'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: '', title: 'Каратэ'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/9.jpg', title: 'Спортивная аэробика'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/11.jpg', title: 'Армрестлинг'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/12.jpg', title: 'Футбол'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/13.jpg', title: 'Сноуборд'
