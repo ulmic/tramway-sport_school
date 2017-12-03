@@ -1,7 +1,18 @@
 = render 'tramway/sport_school/web/welcome/shared/block', id: :adults do
-  %h1.cover-heading Взрослые
-  %p.lead Главный слоган спортивной школы Ленинского района
-  %p.lead
-    = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary'
-    = link_to 'Я - школьник', '#scholer', class: 'btn btn-lg btn-secondary'
-    = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary'
+  %h1.cover-heading Ищете удобное место для занятия спортом?
+  %p.lead Вашему вниманию представлены много видов спорта для занятий на выгодных условиях
+
+= render 'tramway/sport_school/web/welcome/shared/block', id: :kind_sports do
+  .row
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/1.jpg', title: 'Шахматы'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/default.jpg', title: 'Горнолыжный спорт'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/default.jpg', title: 'Дзюдо'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/default.jpg', title: 'Гиревой спорт'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/default.jpg', title: 'Спортивное ориентирование'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/6.jpg', title: 'Бокс'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/7.jpg', title: 'Лыжные гонки'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/default.jpg', title: 'Каратэ'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/9.jpg', title: 'Спортивная аэробика'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/11.jpg', title: 'Армрестлинг'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/12.jpg', title: 'Футбол'
+    = render 'tramway/sport_school/web/welcome/shared/kind_sport', photo: 'tramway/sport_school/13.jpg', title: 'Сноуборд'
