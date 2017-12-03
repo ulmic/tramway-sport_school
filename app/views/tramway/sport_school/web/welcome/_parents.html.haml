@@ -1,11 +1,3 @@
-.site-wrapper#parents
-  .site-wrapper-inner
-    .cover-container
-      %main.inner.cover{ role: 'main' }
-        %h1.cover-heading родители
-        %p.lead Главный слоган спортивной школы Ленинского района
-      %footer.mastfoot
-        .inner
-          %p
-            = link_to fa_icon('vk 4x'), 'https://vk.com/'
-            = link_to fa_icon('twitter 4x'), 'https://twitter.com/'
+= render 'tramway/sport_school/web/welcome/shared/block', id: :parents do
+  %h1.cover-heading родители
+  %p.lead Главный слоган спортивной школы Ленинского района

@@ -1,15 +1,7 @@
-.site-wrapper#adults
-  .site-wrapper-inner
-    .cover-container
-      %main.inner.cover{ role: 'main' }
-        %h1.cover-heading Взрослые
-        %p.lead Главный слоган спортивной школы Ленинского района
-        %p.lead
-          = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary'
-          = link_to 'Я - школьник', '#scholer', class: 'btn btn-lg btn-secondary'
-          = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary'
-      %footer.mastfoot
-        .inner
-          %p
-            = link_to fa_icon('vk 4x'), 'https://vk.com/'
-            = link_to fa_icon('twitter 4x'), 'https://twitter.com/'
+= render 'tramway/sport_school/web/welcome/shared/block', id: :adults do
+  %h1.cover-heading Взрослые
+  %p.lead Главный слоган спортивной школы Ленинского района
+  %p.lead
+    = link_to 'Я - родитель ребёнка', '#parents', class: 'btn btn-lg btn-secondary'
+    = link_to 'Я - школьник', '#scholer', class: 'btn btn-lg btn-secondary'
+    = link_to 'Я - взрослый', '#adult', class: 'btn btn-lg btn-secondary'
