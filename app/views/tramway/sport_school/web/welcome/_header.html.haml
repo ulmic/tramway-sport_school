@@ -13,8 +13,7 @@
         %p.lead
           - [ :parents, :schoolkids, :adults ].each do |block|
             = link_to t("blocks.header_buttons.#{block}"), "##{block}", class: 'btn btn-lg btn-secondary scroll', data: { id: block }
-      %footer.mastfoot
-        .inner
-          %p
-            = link_to fa_icon('vk 4x'), 'https://vk.com/'
-            = link_to fa_icon('twitter 4x'), 'https://twitter.com/'
+      .inner
+        %p
+          = link_to fa_icon('vk 4x'), 'https://vk.com/'
+          = link_to fa_icon('twitter 4x'), 'https://twitter.com/'
