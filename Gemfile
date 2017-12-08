@@ -13,5 +13,12 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'bcrypt'
 gem 'reform'
-gem 'trap'
+gem 'trap', '~> 2.1'
 gem 'copyright_mafa'
+gem 'enumerize'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views', github: 'rafaelmotta/bootstrap-kaminari-views', branch: :master
+
+group :development do
+  gem 'pry'
+end
