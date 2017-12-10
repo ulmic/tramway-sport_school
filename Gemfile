@@ -18,6 +18,7 @@ gem 'copyright_mafa'
 gem 'enumerize'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views', github: 'rafaelmotta/bootstrap-kaminari-views', branch: :master
+gem 'state_machine', github: 'seuros/state_machine'
 
 group :development do
   gem 'pry'
