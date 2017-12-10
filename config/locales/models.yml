@@ -1,0 +1,8 @@
+ru:
+  activerecord:
+    attributes:
+      tramway/sport_school/kind_sport:
+        title: Название
+  cases:
+    tramway/sport_school/kind_sport:
+      genitive: вид спорта
