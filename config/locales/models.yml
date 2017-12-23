@@ -1,5 +1,7 @@
 ru:
   activerecord:
+    models:
+      tramway/sport_school/kind_sport: Вид спорта
     attributes:
       tramway/sport_school/kind_sport:
         title: Название
