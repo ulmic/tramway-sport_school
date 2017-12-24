@@ -5,11 +5,11 @@ module Tramway::SportSchool
       state :hidden
 
       event :publish do
-        transition hide: :published
+        transition hidden: :published
       end
 
       event :hide do
-        transition published: :hide
+        transition published: :hidden
       end
     end
 
