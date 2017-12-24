@@ -3,6 +3,14 @@ module Tramway::SportSchool
     state_machine :view_state, initial: :published do
       state :published
       state :hidden
+
+      event :publish do
+        transition all => :published
+      end
+
+      event :hide do
+        transition all => :hide
+      end
     end
 
     scope :published, -> { where view_state: :published }
