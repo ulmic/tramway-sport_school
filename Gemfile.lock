@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/apotonick/disposable.git
+  revision: 62be230db0e877df96c2fa0e5be475d4b44b08b6
+  specs:
+    disposable (0.4.3)
+      declarative (>= 0.0.9, < 1.0.0)
+      declarative-builder (< 0.2.0)
+      declarative-option (< 0.2.0)
+      representable (>= 2.4.0, <= 3.1.0)
+      uber (< 0.2.0)
+
+GIT
   remote: git://github.com/rafaelmotta/bootstrap-kaminari-views.git
   revision: e8d57b2fbf56607731c6c9bf254f24f38ce2beec
   branch: master
@@ -104,12 +115,6 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
-    disposable (0.4.3)
-      declarative (>= 0.0.9, < 1.0.0)
-      declarative-builder (< 0.2.0)
-      declarative-option (< 0.2.0)
-      representable (>= 2.4.0, <= 3.1.0)
-      uber (< 0.2.0)
     enumerize (2.1.2)
       activesupport (>= 3.2)
     erubi (1.7.0)
@@ -202,6 +207,9 @@ GEM
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
+    reform-rails (0.1.7)
+      activemodel (>= 3.2)
+      reform (>= 2.2.0)
     representable (3.0.4)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -253,6 +261,7 @@ DEPENDENCIES
   bootstrap-kaminari-views!
   coffee-rails
   copyright_mafa
+  disposable!
   enumerize
   font-awesome-rails
   haml-rails
@@ -260,7 +269,7 @@ DEPENDENCIES
   kaminari
   pg
   pry
-  reform
+  reform-rails
   sass-rails
   simple_form
   state_machine!

@@ -5,6 +5,7 @@ ru:
     attributes:
       tramway/sport_school/kind_sport:
         title: Название
+        name: Название
   cases:
     tramway/sport_school/kind_sport:
       genitive: вид спорта

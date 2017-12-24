@@ -10,5 +10,5 @@ ru:
     tramway/sport_school/kind_sport:
       view_state:
         events:
-          publish: Открыть
-          hide: Скрыть
+          publish: Показать на сайте
+          hide: Скрыть с сайта
