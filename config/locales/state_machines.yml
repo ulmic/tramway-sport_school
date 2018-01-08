@@ -6,9 +6,12 @@ ru:
       <<: *default
       published: Опубликованные
       hidden: Скрытые
-  state_machines:
-    tramway/sport_school/kind_sport:
-      view_state:
-        events:
-          publish: Показать на сайте
-          hide: Скрыть с сайта
+  activerecord:
+    state_machines:
+      tramway/sport_school/kind_sport:
+        view_state:
+          states:
+            hidden: Скрытый
+          events:
+            publish: Показать на сайте
+            hide: Скрыть с сайта

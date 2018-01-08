@@ -20,7 +20,7 @@ gem 'enumerize'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views', github: 'rafaelmotta/bootstrap-kaminari-views', branch: :master
 gem 'state_machine', github: 'seuros/state_machine'
-gem 'state_machine_buttons', '>= 0.4'
+gem 'state_machine_buttons', '>= 0.4.1'
 gem 'disposable', github: 'apotonick/disposable'
 
 group :development do

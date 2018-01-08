@@ -6,6 +6,7 @@ ru:
       tramway/sport_school/kind_sport:
         title: Название
         name: Название
+        view_state: Видимость
   cases:
     tramway/sport_school/kind_sport:
       genitive: вид спорта
