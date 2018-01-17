@@ -18,6 +18,8 @@ module Tramway::SportSchool::Generators
     def copy_migrations
       migration_template 'create_tramway_sport_school_kind_sports.rb', 'db/migrate/create_tramway_sport_school_kind_sports.rb'
       migration_template 'add_state_to_tramway_sport_school_kind_sports.rb', 'db/migrate/add_state_to_tramway_sport_school_kind_sports.rb'
+      migration_template 'add_image_to_tramway_sport_school_kind_sports.rb', 'db/migrate/add_image_to_tramway_sport_school_kind_sports.rb'
+      migration_template 'create_tramway_sport_school_trainers.rb', 'db/migrate/create_tramway_sport_school_trainers.rb'
     end
   end
 end

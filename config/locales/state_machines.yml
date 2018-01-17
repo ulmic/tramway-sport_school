@@ -1,9 +1,6 @@
 ru:
   collections:
-    default: &default
-      all: Все
     tramway/sport_school/kind_sport:
-      <<: *default
       published: Опубликованные
       hidden: Скрытые
   activerecord:

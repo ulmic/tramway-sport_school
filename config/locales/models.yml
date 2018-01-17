@@ -2,11 +2,21 @@ ru:
   activerecord:
     models:
       tramway/sport_school/kind_sport: Вид спорта
+      tramway/sport_school/trainer: Тренер
     attributes:
       tramway/sport_school/kind_sport:
         title: Название
         name: Название
         view_state: Видимость
+      tramway/sport_school/trainer:
+        first_name: Имя
+        last_name: Фамилия
+        patronymic: Отчество
+        name: Ф.И.О.
   cases:
+    tramway/sport_school/trainer:
+      plural: тренеры
+      genitive: тренера
     tramway/sport_school/kind_sport:
+      plural: виды спорта
       genitive: вид спорта
