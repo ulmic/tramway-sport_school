@@ -10,6 +10,31 @@ GIT
       uber (< 0.2.0)
 
 GIT
+  remote: git://github.com/kalashnikovisme/tramway-admin.git
+  revision: 84fa2b535185b6244f6553aa2b9f733f088d4f54
+  branch: develop
+  specs:
+    tramway-admin (0.1.0)
+      rails (~> 5.1.4)
+
+GIT
+  remote: git://github.com/kalashnikovisme/tramway-core.git
+  revision: 7a0b950422863bbab897c9db324f4342d190425b
+  branch: develop
+  specs:
+    tramway-core (0.1.0.4)
+      rails (~> 5.1.4)
+
+GIT
+  remote: git://github.com/kalashnikovisme/tramway-user.git
+  revision: a33d020eb48c603f942aecb904237abb27141002
+  branch: develop
+  specs:
+    tramway-user (0.1.0)
+      rails (~> 5.1.4)
+      tramway-core (~> 0.1.0.4)
+
+GIT
   remote: git://github.com/rafaelmotta/bootstrap-kaminari-views.git
   revision: e8d57b2fbf56607731c6c9bf254f24f38ce2beec
   branch: master
@@ -23,25 +48,6 @@ GIT
   revision: 95ba53f03e5657a5873343c2b1dc6a148ea3542e
   specs:
     state_machine (1.2.0)
-
-PATH
-  remote: ../tramway-admin
-  specs:
-    tramway-admin (0.1.0)
-      rails (~> 5.1.4)
-
-PATH
-  remote: ../tramway-core
-  specs:
-    tramway-core (0.1.0.4)
-      rails (~> 5.1.4)
-
-PATH
-  remote: ../tramway-user
-  specs:
-    tramway-user (0.1.0)
-      rails (~> 5.1.4)
-      tramway-core (~> 0.1.0.4)
 
 PATH
   remote: .
