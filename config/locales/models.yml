@@ -27,3 +27,8 @@ ru:
     tramway/sport_school/kind_sport:
       plural: виды спорта
       genitive: вид спорта
+  enumerize:
+    tramway/sport_school/trainer:
+      degree:
+        master_of_sport: Мастер спорта
+        candidate_master_of_sports: Кандидат в мастера спорта

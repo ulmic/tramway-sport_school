@@ -18,3 +18,11 @@
     .col
       = link_to 'http://gosuslugi.ru' do
         = image_tag 'tramway/sport_school/gosuslugi.jpg', class: 'img-thumbnail'
+  .row
+    .col
+      %h5
+        Документы
+      %ul
+        - @documents.each do |document|
+          %li
+            = link_to document.title, document.file.url

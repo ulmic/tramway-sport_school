@@ -10,7 +10,6 @@
         Опытный коллектив тренеров
   %hr
   .row
-    = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
-    = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
-    = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
-    = render 'tramway/sport_school/web/welcome/shared/man_card', photo: 'tramway/sport_school/director.jpg', name: 'Егоров Р.Е.', position: 'Заслуженный мастер спорта России'
+    - @trainers.each do |trainer|
+      .col-2{ style: 'margin-top: 25px;' }
+        = render 'tramway/sport_school/web/welcome/shared/man_card', photo: trainer.photo.medium.url, name: trainer.initial_short_name, position: trainer.degree.text
