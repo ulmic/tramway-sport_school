@@ -15,4 +15,13 @@ class Tramway::SportSchool::TrainerDecorator < ::Tramway::Core::ApplicationDecor
 
   delegate :photo, to: :object
   delegate :degree, to: :object
+
+  def view_state_button_color(event)
+    case event
+    when :publish
+      :primary
+    when :hide
+      :secondary
+    end
+  end
 end

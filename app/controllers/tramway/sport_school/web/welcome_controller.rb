@@ -6,6 +6,6 @@ class Tramway::SportSchool::Web::WelcomeController < ApplicationController
   def index
     @kind_sports = ::Tramway::SportSchool::KindSport.active.published
     @documents = ::Tramway::SportSchool::Document.active
-    @trainers = ::Tramway::SportSchool::Trainer.active.map { |t| ::Tramway::SportSchool::TrainerDecorator.new t }
+    @trainers = ::Tramway::SportSchool::Trainer.active.published.map { |t| ::Tramway::SportSchool::TrainerDecorator.new t }
   end
 end

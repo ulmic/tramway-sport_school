@@ -12,3 +12,10 @@ ru:
           events:
             publish: Показать на сайте
             hide: Скрыть с сайта
+      tramway/sport_school/trainer:
+        view_state:
+          states:
+            hidden: Скрытый
+          events:
+            publish: Показать на сайте
+            hide: Скрыть с сайта
