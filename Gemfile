@@ -22,6 +22,7 @@ gem 'bootstrap-kaminari-views', github: 'rafaelmotta/bootstrap-kaminari-views', 
 gem 'state_machine', github: 'seuros/state_machine'
 gem 'state_machine_buttons', '>= 0.4.1'
 gem 'disposable', github: 'apotonick/disposable'
+gem 'carrierwave'
 
 group :development do
   gem 'pry'

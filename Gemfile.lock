@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/kalashnikovisme/tramway-admin.git
-  revision: 84fa2b535185b6244f6553aa2b9f733f088d4f54
+  revision: 287afc009810d318d8d8aa63d468c79d809d86f9
   branch: develop
   specs:
     tramway-admin (0.1.0)
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: git://github.com/kalashnikovisme/tramway-core.git
-  revision: 7a0b950422863bbab897c9db324f4342d190425b
+  revision: c1e2382e8de6429fb4a4abe89ebb79b98040b6f2
   branch: develop
   specs:
     tramway-core (0.1.0.4)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/kalashnikovisme/tramway-user.git
-  revision: a33d020eb48c603f942aecb904237abb27141002
+  revision: 006d58523e2ef99913a6837f4b91469905439c5d
   branch: develop
   specs:
     tramway-user (0.1.0)
@@ -96,16 +96,20 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
-    audited (4.5.0)
+    audited (4.6.0)
       activerecord (>= 4.0, < 5.2)
-    autoprefixer-rails (7.1.6)
+    autoprefixer-rails (7.2.5)
       execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.beta2.1)
+    bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.3, < 2)
+      popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
     builder (3.2.3)
+    carrierwave (1.2.2)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -127,7 +131,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
-    font-awesome-rails (4.7.0.2)
+    font-awesome-rails (4.7.0.3)
       railties (>= 3.2, < 5.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -169,14 +173,17 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.10.3)
-    nio4r (2.1.0)
+    minitest (5.11.1)
+    nio4r (2.2.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    pg (0.21.0)
-    popper_js (1.12.5)
+    pg (1.0.0)
+    popper_js (1.12.9)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -222,7 +229,7 @@ GEM
       uber (< 0.2.0)
     ruby_parser (3.10.1)
       sexp_processor (~> 4.9)
-    sass (3.5.3)
+    sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -265,6 +272,7 @@ DEPENDENCIES
   bcrypt
   bootstrap (~> 4.0.0.beta2.1)
   bootstrap-kaminari-views!
+  carrierwave
   coffee-rails
   copyright_mafa
   disposable!

@@ -3,6 +3,7 @@ ru:
     models:
       tramway/sport_school/kind_sport: Вид спорта
       tramway/sport_school/trainer: Тренер
+      tramway/sport_school/document: Документ
     attributes:
       tramway/sport_school/kind_sport:
         title: Название
@@ -13,7 +14,13 @@ ru:
         last_name: Фамилия
         patronymic: Отчество
         name: Ф.И.О.
+      tramway/sport_school/document:
+        title: Название
+        file: Файл
   cases:
+    tramway/sport_school/document:
+      plural: документы
+      genitive: документ
     tramway/sport_school/trainer:
       plural: тренеры
       genitive: тренера
