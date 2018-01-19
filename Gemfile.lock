@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/kalashnikovisme/tramway-admin.git
-  revision: 287afc009810d318d8d8aa63d468c79d809d86f9
+  revision: b550f014cfb3aaec41f31a5a31be3264570b85fb
   branch: develop
   specs:
     tramway-admin (0.1.0)
