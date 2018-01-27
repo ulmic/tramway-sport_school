@@ -1,5 +1,5 @@
 class Tramway::SportSchool::TrainerForm < ::Tramway::Core::ApplicationForm
-  properties :first_name, :last_name, :patronymic, :photo, :degree
+  properties :first_name, :last_name, :patronymic, :photo, :degree, :view_state
 
   def initialize(object)
     form_object = super object

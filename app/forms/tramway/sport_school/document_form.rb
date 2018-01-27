@@ -1,5 +1,5 @@
 class Tramway::SportSchool::DocumentForm < ::Tramway::Core::ApplicationForm
-  properties :title, :file
+  properties :title, :file, :view_state
 
   def initialize(object)
     form_object = super object
