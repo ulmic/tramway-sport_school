@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gemspec
 
+gem 'pg', '0.21.0'
 gem 'tramway-user', github: 'kalashnikovisme/tramway-user', branch: :develop
 gem 'tramway-core', github: 'kalashnikovisme/tramway-core', branch: :develop
 gem 'tramway-admin', github: 'kalashnikovisme/tramway-admin', branch: :develop
@@ -28,7 +29,7 @@ gem 'rmagick'
 
 group :development do
   gem 'pry'
-  #gem 'tramway-user', path: '../tramway-user'
-  #gem 'tramway-core', path: '../tramway-core'
-  #gem 'tramway-admin', path: '../tramway-admin'
+ # gem 'tramway-user', path: '../tramway-user'
+ # gem 'tramway-core', path: '../tramway-core'
+ # gem 'tramway-admin', path: '../tramway-admin'
 end

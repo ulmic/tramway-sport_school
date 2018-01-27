@@ -1,6 +1,12 @@
 class Tramway::SportSchool::KindSportDecorator < ::Tramway::Core::ApplicationDecorator
-  def self.collections
-    [ :all, :published, :hidden ]
+  class << self
+    def collections
+      [ :all, :published, :hidden ]
+    end
+
+    def list_attributes
+      [ :view_state ]
+    end
   end
 
   def view_state_button_color(event)

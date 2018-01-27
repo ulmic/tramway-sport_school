@@ -1,6 +1,12 @@
 class Tramway::SportSchool::TrainerDecorator < ::Tramway::Core::ApplicationDecorator
-  def self.collections
-    [ :all ]
+  class << self
+    def collections
+      [ :all ]
+    end
+
+    def list_attributes
+      [ :view_state ]
+    end
   end
 
   def full_name
@@ -15,6 +21,10 @@ class Tramway::SportSchool::TrainerDecorator < ::Tramway::Core::ApplicationDecor
 
   delegate :photo, to: :object
   delegate :degree, to: :object
+
+  def view_state
+    object.human_view_state_name
+  end
 
   def view_state_button_color(event)
     case event

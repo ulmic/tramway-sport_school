@@ -8,7 +8,7 @@ ru:
       tramway/sport_school/kind_sport:
         title: Название
         name: Название
-        view_state: Видимость
+        view_state: Видимость на сайте
       tramway/sport_school/trainer:
         first_name: Имя
         last_name: Фамилия
@@ -16,10 +16,11 @@ ru:
         name: Ф.И.О.
         degree: Звание
         photo: Фото
-        view_state: Видимость
+        view_state: Видимость на сайте
       tramway/sport_school/document:
         title: Название
         file: Файл
+        view_state: Видимость на сайте
   cases:
     tramway/sport_school/document:
       plural: документы
