@@ -21,6 +21,7 @@ class Tramway::SportSchool::TrainerDecorator < ::Tramway::Core::ApplicationDecor
 
   delegate :photo, to: :object
   delegate :degree, to: :object
+  delegate :description, to: :object
 
   def view_state
     object.human_view_state_name

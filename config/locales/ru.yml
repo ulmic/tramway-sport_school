@@ -1,4 +1,7 @@
 ru:
+  application:
+    name: Спортивная школа
+    tagline: Главный слоган спортивной школы Ленинского района
   blocks:
     navbar_links:
       parents: Для родителей

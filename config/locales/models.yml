@@ -4,6 +4,7 @@ ru:
       tramway/sport_school/kind_sport: Вид спорта
       tramway/sport_school/trainer: Тренер
       tramway/sport_school/document: Документ
+      tramway/sport_school/institution: Спортивная школа
     attributes:
       tramway/sport_school/kind_sport:
         title: Название
@@ -22,6 +23,10 @@ ru:
         title: Название
         file: Файл
         view_state: Видимость на сайте
+      tramway/sport_school/institution:
+        title: Название
+        tagline: Лозунг
+        logo: Логотип
   cases:
     tramway/sport_school/document:
       plural: документы
@@ -32,6 +37,8 @@ ru:
     tramway/sport_school/kind_sport:
       plural: виды спорта
       genitive: вид спорта
+    tramway/sport_school/institution:
+      genitive: спортивную школу
   enumerize:
     tramway/sport_school/trainer:
       degree:

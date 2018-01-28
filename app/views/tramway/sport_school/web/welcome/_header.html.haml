@@ -1,14 +1,6 @@
 .site-wrapper
   .site-wrapper-inner
     .cover-container
-      %header.masthead.clearfix
-        .inner
-          %nav.navbar.navbar-expand-lg
-            = link_to 'Спортивная школа', '#', class: 'navbar-brand'
-            %ul.navbar-nav
-              - [ :parents, :schoolkids, :adults, :contacts ].each do |block|
-                %li.navbar-item
-                  = link_to t("blocks.navbar_links.#{block}"), "##{block}", class: 'nav-link scroll', data: { id: block  }
       %main.inner.cover{ role: :main }
         %h1.cover-heading Спортивная школа Ленинского района
         %p.lead Главный слоган спортивной школы Ленинского района

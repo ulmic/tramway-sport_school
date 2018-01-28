@@ -4,3 +4,7 @@
   ::Tramway::SportSchool::Trainer,
   ::Tramway::SportSchool::Document
 ]
+
+::Tramway::Admin.singleton_models = [
+  ::Tramway::SportSchool::Institution
+]
