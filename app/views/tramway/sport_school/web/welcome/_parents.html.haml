@@ -12,4 +12,4 @@
   .row
     - @trainers.each do |trainer|
       .col-2{ style: 'margin-top: 25px;' }
-        = render 'tramway/sport_school/web/welcome/shared/man_card', photo: trainer.photo.medium.url, name: trainer.initial_short_name, position: trainer.degree.text
+        = render 'tramway/sport_school/web/welcome/shared/man_card', photo: trainer.photo.medium.url, name: trainer.initial_short_name, position: trainer.description

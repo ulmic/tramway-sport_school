@@ -10,7 +10,7 @@ class Tramway::SportSchool::TrainerDecorator < ::Tramway::Core::ApplicationDecor
   end
 
   def full_name
-    "#{object.first_name} #{object.last_name} #{object.patronymic}"
+    "#{object.first_name} #{object.patronymic} #{object.last_name}"
   end
 
   def initial_short_name

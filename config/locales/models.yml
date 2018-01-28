@@ -17,6 +17,7 @@ ru:
         degree: Звание
         photo: Фото
         view_state: Видимость на сайте
+        description: Описание
       tramway/sport_school/document:
         title: Название
         file: Файл
