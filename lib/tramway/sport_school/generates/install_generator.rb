@@ -8,6 +8,7 @@ module Tramway::SportSchool::Generators
 
     def run_other_generators
       generate 'tramway:user:install'
+      generate 'tramway:landing:install'
     end
 
     def self.next_migration_number(path)
