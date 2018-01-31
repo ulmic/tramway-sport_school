@@ -9,6 +9,10 @@ class Tramway::SportSchool::KindSportDecorator < ::Tramway::Core::ApplicationDec
     end
   end
 
+  def view_state
+    object.human_view_state_name
+  end
+
   def view_state_button_color(event)
     case event
     when :publish
