@@ -10,6 +10,7 @@ ru:
         title: Название
         name: Название
         view_state: Видимость на сайте
+        image: Изображение
       tramway/sport_school/trainer:
         first_name: Имя
         last_name: Фамилия
