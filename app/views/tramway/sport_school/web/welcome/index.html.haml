@@ -11,6 +11,14 @@
 = content_for :navbar do
   - [ :parents, :schoolkids, :adults, :contacts ].each do |block|
     = menu_item t("blocks.navbar_links.#{block}"), "##{block}"
+
+= content_for :footer_links do
+  %h5.title
+    = plural Tramway::SportSchool::Document.model_name
+  %ul
+    - @documents.each do |document|
+      %li
+        = link_to document.title, document.file.url
 -#= render 'header'
 -#= render 'parents'
 -#= render 'schoolkids'
