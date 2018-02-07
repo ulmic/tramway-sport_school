@@ -1,6 +1,6 @@
 class Tramway::SportSchool::Cards::TrainerDecorator < ::Tramway::Landing::BlockTypes::CardsDecorator
   def image
-    object.photo.card.url
+    object.photo.medium.url
   end
   
   def title
