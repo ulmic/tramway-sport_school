@@ -3,10 +3,10 @@
   = javascript_include_tag 'tramway/sport_school/application'
 
 = content_for :application_name do
-  = @institution.title || t('application.name')
+  = @application.title || t('application.name')
 
 = content_for :application_tagline do
-  = @institution.tagline || t('application.tagline')
+  = @application.tagline || t('application.tagline')
 
 = content_for :navbar do
   - [ :parents, :schoolkids, :adults, :contacts ].each do |block|
@@ -19,10 +19,5 @@
     - @documents.each do |document|
       %li
         = link_to document.title, document.file.url
--#= render 'header'
--#= render 'parents'
--#= render 'schoolkids'
--#= render 'adults'
--#= render 'contacts'
--#= render 'directors_text'
--#= render 'footer'
+
+- @collection_parents = @trainers

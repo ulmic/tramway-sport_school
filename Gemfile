@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'pg', '0.21.0'
-gem 'tramway-user', github: 'kalashnikovisme/tramway-user', branch: :develop
-gem 'tramway-core', github: 'kalashnikovisme/tramway-core', branch: :develop
-gem 'tramway-admin', github: 'kalashnikovisme/tramway-admin', branch: :develop
-gem 'tramway-landing', github: 'kalashnikovisme/tramway-landing', branch: :develop
+gem 'tramway-user', github: 'ulmic/tramway-user', branch: :develop
+gem 'tramway-core', github: 'ulmic/tramway-core', branch: :develop
+gem 'tramway-admin', github: 'ulmic/tramway-admin', branch: :develop
+gem 'tramway-landing', github: 'ulmic/tramway-landing', branch: :develop
 gem 'haml-rails'
 gem 'sass-rails'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
