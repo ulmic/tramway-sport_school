@@ -5,6 +5,7 @@ ru:
       tramway/sport_school/trainer: Тренер
       tramway/sport_school/document: Документ
       tramway/sport_school/institution: Спортивная школа
+      tramway/sport_school/organization: Организация
     attributes:
       tramway/sport_school/kind_sport:
         title: Название
@@ -28,6 +29,12 @@ ru:
         title: Название
         tagline: Лозунг
         logo: Логотип
+      tramway/sport_school/organization:
+        title: Название
+        description: Описание
+        logo: Логотип
+        organization_type: Тип организации
+        link: Ссылка
   cases:
     tramway/sport_school/document:
       plural: документы
@@ -40,8 +47,16 @@ ru:
       genitive: вид спорта
     tramway/sport_school/institution:
       genitive: спортивную школу
+    tramway/sport_school/organization:
+      genitive: организацию
+      plural: организации
   enumerize:
     tramway/sport_school/trainer:
       degree:
         master_of_sport: Мастер спорта
         candidate_master_of_sports: Кандидат в мастера спорта
+    tramway/sport_school/organization:
+      organization_type:
+        required: Обязательна для отображения на главной странице
+        partner: Партнёр
+        sponsor: Спонсор

@@ -7,5 +7,6 @@ class Tramway::SportSchool::Web::WelcomeController < ::Tramway::SportSchool::App
     @trainers = ::Tramway::SportSchool::Trainer.active.published.map { |t| ::Tramway::SportSchool::Cards::TrainerDecorator.new t }
     @institution = ::Tramway::SportSchool::Institution.first
     @blocks = ::Tramway::Landing::Block.on_main_page
+    @organizations = ::Tramway::SportSchool::Organization.published
   end
 end

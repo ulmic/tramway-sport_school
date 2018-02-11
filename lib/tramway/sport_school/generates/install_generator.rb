@@ -26,6 +26,7 @@ module Tramway::SportSchool::Generators
       migration_template 'add_description_to_tramway_sport_school_trainers.rb', 'db/migrate/add_description_to_tramway_sport_school_trainers.rb'
       migration_template 'create_tramway_sport_school_institutions.rb', 'db/migrate/create_tramway_sport_school_institutions.rb'
       migration_template 'add_description_to_tramway_sport_school_kind_sports.rb', 'db/migrate/add_description_to_tramway_sport_school_kind_sports.rb'
+      migration_template 'create_tramway_sport_school_organizations.rb', 'db/migrate/create_tramway_sport_school_organizations.rb'
       ::Tramway::SportSchool::Institution.create!
     end
   end

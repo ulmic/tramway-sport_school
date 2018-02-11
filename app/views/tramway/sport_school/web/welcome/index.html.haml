@@ -20,5 +20,9 @@
       %li
         = link_to document.title, document.file.url
 
+= content_for :footer_logos do
+  - @organizations.each do |organization|
+    = image_tag organization.logo.url
+
 - @collection_parents = @trainers
 - @collection_kindsports = @kind_sports
