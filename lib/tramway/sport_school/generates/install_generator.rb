@@ -9,6 +9,8 @@ module Tramway::SportSchool::Generators
     def run_other_generators
       generate 'tramway:user:install'
       generate 'tramway:landing:install'
+      generate 'tramway:profiles:install'
+      generate 'tramway:news:install'
     end
 
     def self.next_migration_number(path)
@@ -27,6 +29,8 @@ module Tramway::SportSchool::Generators
       migration_template 'create_tramway_sport_school_institutions.rb', 'db/migrate/create_tramway_sport_school_institutions.rb'
       migration_template 'add_description_to_tramway_sport_school_kind_sports.rb', 'db/migrate/add_description_to_tramway_sport_school_kind_sports.rb'
       migration_template 'create_tramway_sport_school_organizations.rb', 'db/migrate/create_tramway_sport_school_organizations.rb'
+      migration_template 'add_contacts_to_tramway_sport_school_institutions.rb', 'db/migrate/add_contacts_to_tramway_sport_school_institutions.rb'
+      migration_template 'add_ll_to_tramway_sport_school_institutions.rb', 'db/migrate/add_ll_to_tramway_sport_school_institutions.rb'
       ::Tramway::SportSchool::Institution.create!
     end
   end

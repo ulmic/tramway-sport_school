@@ -29,6 +29,8 @@ ru:
         title: Название
         tagline: Лозунг
         logo: Логотип
+        address: Адрес
+        phone: Телефон
       tramway/sport_school/organization:
         title: Название
         description: Описание
