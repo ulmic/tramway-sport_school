@@ -5,6 +5,9 @@
 = content_for :application_name do
   = @application.title || t('application.name')
 
+= content_for :title do
+  = @application.title || t('application.name')
+
 = content_for :application_tagline do
   = @application.tagline || t('application.tagline')
 
