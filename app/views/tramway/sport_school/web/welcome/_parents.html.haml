@@ -1,0 +1,15 @@
+= render 'tramway/sport_school/web/welcome/shared/block', id: :parents do
+  %h1.cover-heading{ style: 'color: white' } Мы находимся в центре города
+  %p.lead{ style: 'color: white' } Вы живете в Ленинском районе города Ульяновска? Или может быть ваш ребенок учится в одной из центральных школ города? Вы стали замечать, что у него есть способности к спорту? Тогда вам сюда!
+
+
+= render 'tramway/sport_school/web/welcome/shared/block', id: :trainers do
+  .row
+    .col
+      %h1.cover-heading{ style: 'color: white' }
+        Опытный коллектив тренеров
+  %hr
+  .row
+    - @trainers.each do |trainer|
+      .col-2{ style: 'margin-top: 25px;' }
+        = render 'tramway/sport_school/web/welcome/shared/man_card', photo: trainer.photo.medium.url, name: trainer.initial_short_name, position: trainer.description
