@@ -31,13 +31,15 @@
 
 = content_for :footer_logos do
   - @organizations.each do |organization|
-    = image_tag organization.logo.url
+    = link_to organization.link do
+      = image_tag organization.logo.url
 
 = content_for :latitude do
   = @institution.latitude
 
 = content_for :longtitude do
   = @institution.longtitude
-- @collection_parents = @trainers
+
+- @collection_trainers = @trainers
 - @collection_kindsports = @kind_sports
 - @collection_news = @news
