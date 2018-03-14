@@ -31,7 +31,8 @@
 
 = content_for :footer_logos do
   - @organizations.each do |organization|
-    = image_tag organization.logo.url
+    = link_to organization.link do
+      = image_tag organization.logo.url
 
 = content_for :latitude do
   = @institution.latitude

@@ -4,7 +4,7 @@ class Tramway::SportSchool::Cards::TrainerDecorator < ::Tramway::Landing::BlockT
   end
   
   def title
-    "#{object.last_name} #{object.first_name}. #{object.patronymic}."
+    "#{object.last_name} #{object.first_name} #{object.patronymic}"
   end
 
   delegate :description, to: :object
