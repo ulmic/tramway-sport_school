@@ -8,6 +8,6 @@ class Tramway::SportSchool::Web::WelcomeController < ::Tramway::SportSchool::App
     @institution = ::Tramway::SportSchool::Institution.includes(:social_networks).first
     @blocks = ::Tramway::Landing::Block.on_main_page
     @organizations = ::Tramway::SportSchool::Organization.published
-    @news = ::Tramway::News::News.active.first(3).map { |t| ::Tramway::Landing::Cards::NewsDecorator.new t }
+    @news = ::Tramway::News::News.active.last(3).reverse.map { |t| ::Tramway::Landing::Cards::NewsDecorator.new t }
   end
 end
